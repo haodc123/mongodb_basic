@@ -14,3 +14,13 @@
 - ref: https://larainfo.com/blogs/install-react-js-in-laravel-9-with-vite
 
 - note: above link is missing: after create laravel app, run `npm install`
+
+### This commit, add mongodb support
+
+#### Laravel + MongoDB with basic operation		
+	
+- https://adevait.com/laravel/using-laravel-with-mongodb	
+
+- https://www.mongodb.com/compatibility/mongodb-laravel-intergration	
+
+ ++ Note for connection, need use password without special character
