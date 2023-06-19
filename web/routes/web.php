@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ItemController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BlogsController;
-use App\Http\Controllers\EXCController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +16,8 @@ use App\Http\Controllers\EXCController;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
-
+Route::get('/user/{id}', [UserController::class, 'show']);
+Route::get('/users', [UserController::class, 'index']);
 
 // Auth::routes();
 // Route::get('logout', function ()
