@@ -17,25 +17,7 @@ use App\Http\Controllers\EXCController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('direction');
-Route::get('home', [HomeController::class, 'home'])->name('home');
-
-Route::get('blogs/{title}', [BlogsController::class, 'show'])->name('blogs.show');
-
-Route::get('exc/list/grade-{grade}/subject-{subject_s}', [EXCController::class, 'list'])->name('exc.list');
-Route::get('exc/show/{exc_i}', [EXCController::class, 'show'])->name('exc.show');
-
-Route::get('exc/{input_type}/{grade}/{subject_i}', [EXCController::class, 'input'])->name('exc.input');
-
-Route::post('exc/ocr_nc_upload', [EXCController::class, 'ocr_nc_upload'])->name('exc.ocr_nc_upload');
-Route::post('exc/ocr_api_upload', [EXCController::class, 'ocr_api_upload'])->name('exc.ocr_api.upload');
-Route::post('exc/ocr_api', [EXCController::class, 'ocr_api'])->name('exc.ocr_api');
-
-Route::post('exc/process/{input_type}', [EXCController::class, 'process'])->name('exc.process');
-// Route::get('exc/process/{input_type}', [EXCController::class, 'process'])->name('exc.process');
-// Route::get('exc/{input_type}', function() {
-//     return view('exercises.test2');
-// });
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
 
 // Auth::routes();
